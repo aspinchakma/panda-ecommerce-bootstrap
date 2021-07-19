@@ -9,13 +9,14 @@
     <!-- Bootstrap style  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
     <!-- header start  -->
     <header>
-        <div class="container">
+        <div class="container fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
@@ -27,16 +28,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shoes</a>
+                                <a class="nav-link" href="#shoes">Shoes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Backpack</a>
+                                <a class="nav-link" href="#backpack">Backpack</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Subscribe</a>
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
                             </li>
 
                         </ul>
@@ -46,7 +47,7 @@
             </nav>
 
         </div>
-        <section class="container mt-5">
+        <section class="container mt-5" id="home">
             <!-- image slider  -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -64,9 +65,8 @@
                                 <h1>Cool Dude Headphone</h1>
                                 <p>This is the best headphone in the world for people who just want to waste time in
                                     front of funky world.</p>
-                                <h1>$420</h1>
-                                <div class="btn text-white"
-                                    style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);">
+                                <h1 class="slide-items-price">$420</h1>
+                                <div class="btn text-white panda-background-image">
                                     Buy Now
                                 </div>
                             </div>
@@ -81,9 +81,8 @@
                                 <h1>Mega LCD TV For Sports</h1>
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                     tv.</p>
-                                <h1>$1200</h1>
-                                <div class="btn text-white"
-                                    style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);">
+                                <h1 class="slide-items-price">$1200</h1>
+                                <div class="btn text-white panda-background-image">
                                     Buy Now
                                 </div>
                             </div>
@@ -98,9 +97,8 @@
                                 <h1>X-Box for your living room</h1>
                                 <p>This is the best x-box in the world for people who just want to waste time in front
                                     of fake sports.</p>
-                                <h1>$600</h1>
-                                <div class="btn text-white"
-                                    style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);">
+                                <h1 class="slide-items-price">$600</h1>
+                                <div class="btn text-white panda-background-image">
                                     Buy Now
                                 </div>
                             </div>
@@ -129,22 +127,19 @@
 
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="p-3 border d-flex align-items-center justify-content-between rounded-3"
-                        style="background-color:#FFA500;">
+                    <div class="p-3 border d-flex align-items-center justify-content-between rounded-3 catagories-a">
                         <h1 class="text-white">Watch</h1>
                         <img src="images/categories/watch.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="p-3 border d-flex align-items-center justify-content-between rounded-3"
-                        style="background-color:#DA70DA;">
+                    <div class="p-3 border d-flex align-items-center justify-content-between rounded-3 catagories-b">
                         <h1 class="text-white">Bag</h1>
                         <img src="images/categories/bag.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="p-3 border d-flex align-items-center justify-content-between rounded-3"
-                        style="background-color:#0000FF;">
+                    <div class="p-3 border d-flex align-items-center justify-content-between rounded-3 catagories-c">
                         <h1 class="text-white">Shoes</h1>
                         <img src="images/categories/shoes.png" alt="">
                     </div>
@@ -154,11 +149,11 @@
             <!-- shoes section  -->
         </section>
 
-        <section class="container">
+        <section class="container" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card border-0 h-100" style="box-shadow: 5px 5px 10px lightgrey;">
+                    <div class="card border-0 h-100 card-style">
                         <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
@@ -167,15 +162,14 @@
                             <h5>$120</h5>
                         </div>
                         <div class="m-3 border-0">
-                            <button class="btn text-white"
-                                style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);;">
+                            <button class="btn text-white buy-now-button">
                                 Buy Now
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card border-0 h-100" style="box-shadow: 5px 5px 10px lightgrey;">
+                    <div class="card border-0 h-100 card-style">
                         <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
@@ -184,15 +178,14 @@
                             <h5>$320</h5>
                         </div>
                         <div class="m-3 border-0">
-                            <button class="btn text-white"
-                                style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);;">
+                            <button class="btn text-white  buy-now-button">
                                 Buy Now
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card border-0 h-100" style="box-shadow: 5px 5px 10px lightgrey;">
+                    <div class="card border-0 h-100 card-style">
                         <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
@@ -201,8 +194,7 @@
                             <h5>$350</h5>
                         </div>
                         <div class="m-3 border-0">
-                            <button class="btn text-white"
-                                style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);;">
+                            <button class="btn text-white buy-now-button">
                                 Buy Now
                             </button>
                         </div>
@@ -211,11 +203,11 @@
             </div>
         </section>
         <!-- backpack section  -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card border-0 h-100" style="box-shadow: 5px 5px 10px lightgrey;">
+                    <div class="card border-0 h-100 card-style">
                         <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Laltu Bag</h5>
@@ -225,15 +217,14 @@
 
                         </div>
                         <div class="m-3 border-0">
-                            <button class="btn text-white"
-                                style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);;">
+                            <button class="btn text-white buy-now-button">
                                 Buy Now
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card border-0 h-100" style="box-shadow: 5px 5px 10px lightgrey;">
+                    <div class="card border-0 h-100 card-style">
                         <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Blue Niltu Bag</h5>
@@ -243,15 +234,14 @@
 
                         </div>
                         <div class="m-3 border-0">
-                            <button class="btn text-white"
-                                style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);;">
+                            <button class="btn text-white buy-now-button">
                                 Buy Now
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card border-0 h-100" style="box-shadow: 5px 5px 10px lightgrey;">
+                    <div class="card border-0 h-100 card-style">
                         <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Black Kaltu Bag</h5>
@@ -262,8 +252,7 @@
 
                         </div>
                         <div class="m-3 border-0">
-                            <button class="btn text-white"
-                                style="background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);;">
+                            <button class="btn text-white  buy-now-button">
                                 Buy Now
                             </button>
                         </div>
@@ -273,21 +262,21 @@
         </section>
         <!-- Subscribe section  -->
         <section class="container d-flex justify-content-center align-items-center rounded-3"
-            style="background-color:#FCEAE8; height:300px;">
+            style="background-color:#FCEAE8; height:300px;" id="subscribe">
             <div>
                 <h3>LET'S STAY IN TOUCH</h3>
                 <p style="color:gray;font-size:1rem; margin-bottom:0.5rem;">Get updates on sales, specials and more</p>
-                <input
-                    style="width:100%;padding: .375rem .75rem;font-size:1rem;border: 1px solid #ced4da;border-radius: .25rem;"
-                    type="text" placeholder="Write Your Email" name="" id="">
+                <input class="submit-button-style" type="text" placeholder="Write Your Email" name="" id="">
                 <br>
-                <button class="btn text-white mt-2"
-                    style="background-image:linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);">SUBMIT</button>
+                <button class="btn text-white mt-2  buy-now-button">SUBMIT</button>
             </div>
         </section>
     </main>
     <footer>
-
+        <!-- copyright section  -->
+        <section class="container align-items-end mt-5 d-flex justify-content-center" style="height: 100px;">
+            <p><small class="panda-footer">©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+        </section>
     </footer>
 
     <!-- bootstrap script  -->

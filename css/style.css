@@ -1,0 +1,41 @@
+/* common style  */
+.card-style{
+    box-shadow: 5px 5px 10px lightgrey;
+}
+.buy-now-button{
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+}
+.panda-background-image{
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+}
+.slide-items-price{
+    color:#ff136f;
+}
+
+.catagories-a{
+    background-color:#FFA500
+}
+.catagories-a img{
+    width:100px;
+}
+.catagories-b{
+    background-color:#DA70DA;
+}
+.catagories-b img{
+    width:100px;
+}
+.catagories-c{
+    background-color:#0000FF;
+}
+.catagories-c img{
+    width:100px;
+}
+.submit-button-style{
+    width:100%;
+    padding: .375rem .75rem;
+    font-size:1rem;border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.panda-footer{
+    color:gray;
+}
